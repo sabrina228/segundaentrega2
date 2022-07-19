@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wap{
+    width: 60px;
+    position: fixed;
+    right: 13px;
+    bottom: 15px;
+}
+.logo{
+    width: 10%;
+    margin-top: 8%;
+ 
+}
+   
+  
+.imagenes2{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    
+}
+
+
+
+ .fondo{
+     background-size:cover;
+     height: 100%;
+     background-image:url(./pag/imagenes/brillos.jpg)
+    
+    
+ }
+
+.body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.weight-600{
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(232, 232, 224)
+    
+}
+
+.header{
+    
+    height: 500px;
+
+}
+.img-hero{
+    width: 100%;
+    height: auto;
+    grid-column: 7/13;
+}
+.img{
+    width: 95%;
+    max-width: 400px;
+    
+}
+.textos-hero{
+    background-color: chocolate;
+    border: solid black;
+    grid-column: 1/7;
+    padding-right: 50px;
+}
+.textos-hero p{
+    text-align: justify;
+}
+.cta{
+    width: 130px;
+    background: black;
+    color: aqua;
+    display: inline block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.service{
+    height: 370px;
+    background: linear-gradient(180deg, #fff 5050% black 50% );
+}
+.items{
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    text-decoration: none;
+    width: 30%;
+    background: rgb(145, 51, 51);
+    box-shadow: 0 0 6px rgba(0,0, 0,0.5);
+    overflow: hidden;
+    height: 220px;
+    padding: 20px 10px;
+    text-align: center;
+
+}
+[classˆ="far fa "]{
+    font-size: 50px;
+    text-align: center;
+}
+.titulo-services{
+ margin: 20px 0;
+
+}
+
+.about-us{
+   background-size:cover;
+   position: sticky;
+   position: fixed ;
+   width: 100%;
+   top: 0%;
+   background-color: rgb(137, 22, 80);
+   color: rgb(17, 209, 209);
+   height: auto;
+   padding-bottom: 60px;
+}
+   .textos-about-as{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.textos-about-as.parrafo{
+    margin-top: 10px;
+    color: darkgray;
+}
+.numbers{
+    list-style-type: none;
+    text-decoration: none;
+    background-color:plum;
+    grid-column: 1/-1 ;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.number{
+    text-align: center;
+    font-size: 30px;
+    width: 22%;
+}
+ 
+.mission{
+    padding: 80px 0;
+
+}
+
+.textos.mission{
+    grid-column: 7/13;
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+}
+.img-mission{
+   
+    background-color: purple;
+    border: solid crimson;
+    color: #000;
+    grid-column: 1/-7;
+    grid-row: 1/-1;
+}
+    
+.footer{
+    background: black;
+    color:azure;
+    text-align: center;
+     padding:60px 0 ;
+
+}
+.textos-footer{
+    grid-column: 1/-1;
+   margin-bottom: 30px;
+
+}
+.footer-item4:hover{
+    transform: scale(2);
+}
+.footer-item1:hover{
+    transform: scale(2);
+}
+
+[classˆ="footer-item"]a{
+   color:azure ;
+   font-size: 30px;
+    
+
+}
+[classˆ="footer-item"]{
+    grid-column: span 3;
+
+
+}
+@media screen and (max-widht: 800px) {
+    
+    .header{
+        height: auto;
+        
+    }
+    .grid{
+        grid-gap: 30px;
+    }
+    .img-hero,.textos-hero{
+        grid-column: 1/-1;
+    }
+    .img.hero{
+        text-align:center;
+    }
+    .textos-hero{
+        margin-top: 40px;
+
+    }
+    .services{
+        height: auto;
+        margin-top: 40px;
+
+    }
+    .item{
+        width: 60%;
+        margin: 40px 0;
+        height: auto;
+        padding: 40px;
+
+    }
+    .img-mission{
+        grid-column:1/-1 ;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    .textos-mission{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        align-self: center;
+    }
+}
+
+@media screen and(max-width: 400px) {
+    .img{
+        max-width: 170px; 
+    }
+    
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    }
+    .item{
+        width: 90%;
+        flex-shrink: 0;
+    }
+    .number{
+        width: 55%;
+        border-bottom: 1px dotted #fff;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+    }
+    .textos-mission h3{
+        margin-bottom: 15px;
+
+    }
+    [classˆ="footer-item"]{
+        grid-column: 1/-1;
+        
+    }
+}
+
